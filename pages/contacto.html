@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+3:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Amazonas Tattoo</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__navbar">
+            <h1 class="header__titulo">Amazonas Tattoo</h1>
+            <ul class="header__navbar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tatuajes.html">Tatuajes</a></li>
+                <li><a href="./piercings.html">Piercings</a></li>
+                <li><a href="./estudio.html">Estudio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section__contenido--contacto">
+        <form class="section__contenido--padding" action="">
+            <label class="section__texto" for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre" />
+            <label class="section__texto" for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Ingresa tu apellido">
+
+            <label class="section__texto" for="email">Email</label>
+            <input type="email" name="nombre" id="nombre" placeholder="Ingresa tu email" />
+
+            <label class="section__texto" for="phone">Teléfono</label>
+
+            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono" />
+
+            <label class="section__texto" for="consulta">Comentario</label>
+
+            <textarea placeholder="Ingrese su comentario..." name="consulta" id="consulta"></textarea>
+            </textarea>
+            <br>
+            <br>
+
+            <input class="section__contenido--boton" type="submit" value="Enviar" />
+            <input class="section__contenido--boton" type="reset" value="Resetear" />
+        </form>
+        <div class="section__contenido--location">
+            <iframe width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=auto&amp;hl=en&amp;q=Sol,%20Madrid+(Madrid)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/car-satnav-gps/">car navigation systems</a></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2021 Manuel Haro Fulgencio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

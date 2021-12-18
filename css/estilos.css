@@ -1,0 +1,118 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*-----------HEADER-----------*/
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #e5e5e5;
+}
+
+/*-----------NAVBAR-----------*/
+.header__navbar ul {
+  padding: 1rem;
+  text-align: right;
+}
+
+.header__navbar li {
+  display: inline-block;
+}
+
+.header__navbar a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.header__titulo {
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+/*-----------SECTION-----------*/
+
+.section__contenido--principal {
+  background-image: url("../images/home.jpg");
+  background-color: black;
+  height: 75vh;
+  background-size: cover;
+}
+
+.section__contenido--tatto {
+  background-color: black;
+}
+
+.section__images {
+  /*Esta comentado, porque aquí se usara flexbox o grid*/
+}
+
+.section__columns {
+  /*Esta comentado, porque aquí se usara flexbox o grid*/
+}
+
+.section__columns img {
+  width: 100%;
+  height: auto;
+}
+.section__contenido--estudio {
+  background-color: black;
+  height: 75vh;
+}
+
+.section__texto {
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+}
+
+.section__video {
+  padding: 1rem;
+}
+.section__contenido--contacto {
+  background-color: black;
+}
+.section__contenido--boton input:hover {
+  background-color: #11101025;
+}
+.section__contenido--padding {
+  padding: 1rem;
+}
+.section__contenido--location {
+  padding: 1rem;
+  width: 50%;
+}
+label {
+  padding: 1rem;
+  color: white;
+  font-weight: normal;
+  text-align: left;
+  width: auto;
+  display: block;
+}
+
+input {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+textarea {
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+}
+/*-----------FOOTE-----------*/
+
+.footer {
+  background-color: #e5e5e5;
+  font-weight: bold;
+  padding: 1rem;
+}
