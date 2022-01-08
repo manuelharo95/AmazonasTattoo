@@ -15,36 +15,46 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="header">
-        <nav class="header__navbar">
+        <div class="header__container">
+            <div class="header__menu" onclick="menu()"></div>
             <h1 class="header__titulo">Amazonas Tattoo</h1>
-            <ul class="header__navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./tatuajes.html">Tatuajes</a></li>
-                <li><a href="./piercings.html">Piercings</a></li>
-                <li><a href="estudio.html">Estudio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        </div>
+        <!--Nav-->
+        <nav class="header__navbar">
+            <div class="header__navbar--container">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tatuajes.html">Tatuajes</a></li>
+                    <li><a href="./piercings.html">Piercings</a></li>
+                    <li><a href="estudio.html">Estudio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section class="section__contenido--estudio">
-        <div class="section__texto">
+    <!--Section-->
+    <section class="section__contenido--flex">
+        <p class="section__texto">
             En el estudio tienen cabida todo tipo de arte en general, como son desde exposiciones de pintura, escultura,
             fotografía, poesía, etc..
             Ademas, en horario laboral es un punto de encuentro, donde puedes trabajar con tu portátil, mientras tomas
             un refresco, un café o simplemente disfrutas de la música que esta sonando en ese momento.
             Y también fuera de horas se ha convertido en una sala de eventos donde poder presentar un producto o
-            realizar una charla entre otras cosas. </div>
+            realizar una charla entre otras cosas. </p>
         <div class="section__video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6RI5ET8UpgU"
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/6RI5ET8UpgU"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </section>
+    <!--Footer-->
     <footer class="footer">
         <p>© 2021 Manuel Haro Fulgencio. All rights reserved.</p>
     </footer>
 </body>
+<script src="../js/menu.js"></script>
 
 </html>
