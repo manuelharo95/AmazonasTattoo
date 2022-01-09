@@ -181,7 +181,7 @@ textarea {
 
 .footer p {
   font-weight: bold;
-  padding: 0.7rem;
+  padding: 0.6rem;
   text-align: center;
   font-size: 0.9rem;
 }
@@ -197,7 +197,7 @@ textarea {
   }
 
   .header__titulo {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   header nav ul li {
@@ -214,8 +214,12 @@ textarea {
   }
 
   .section__columns img {
-    height: 95%;
+    height: 90%;
+    transition: 0.75s all ease-in-out;
   }
+  .section__columns img:hover {
+    transform: scale(1.1);
+}
 
   .section__contenido--flex {
     margin-top: 6rem;
