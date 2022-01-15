@@ -224,12 +224,6 @@ textarea {
   .section__texto{
     font-size:1rem;
   }
-
-  /*-----------FOOTER-----------*/
-  .footer p {
-    font-size: 1.9rem;
-    padding: 1rem;
-  }
 }
 /*-----ESCRITORIO------*/
 @media screen and (min-width: 1024px) {
@@ -308,6 +302,7 @@ textarea {
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
     margin-top: 8rem;
+    height: 97%;
   }
   
   .section__contenido--flex {
@@ -346,7 +341,6 @@ textarea {
     margin:2rem;
   }
   
-
   /*-----------FOOTER-----------*/
   .footer p {
     font-size: 1rem;
