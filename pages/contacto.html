@@ -51,52 +51,54 @@
         </nav>
     </header>
     <!--Section-->
-    <section>
+    <section class="section__contenido--location">
         <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-sm-12">
-                <form class="section__contenido--padding" action="">
-                    <div class="mb-3">
-                        <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" />
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <form action="">
+                        <div class="mb-3">
+                            <label class="form-label" for="nombre">Nombre</label>
+                            <input class="form-control" id="nombre" type="text" placeholder="Nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="apellido">Apellido</label>
+                            <input class="form-control" id="apellido" type="text" placeholder="Apellido" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="emailAddress">Email</label>
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="phone">Teléfono</label>
+                            <input class="form-control" id="phone" type="text" placeholder="Apellido" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="consulta">Comentario</label>
+                            <textarea class="form-control" id="consulta" type="text"
+                                placeholder="Ingrese su comentario...."></textarea>
+                        </div>
+                        <div class="container mt-5"">
+                            <div class="row">
+                                <button type="col-12 button" type="submit" value="Enviar"
+                                    class="btn btn-lg btn-outline-dark mb-2">Enviar</button>
+                                <button type="col-12 button" type="reset" value="Resetear"
+                                    class="btn btn-lg btn-outline-dark">Resetear</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="section__contenido--location">
+                        <iframe defer width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=auto&amp;hl=en&amp;q=Sol,%20Madrid+(Madrid)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.gps.ie/car-satnav-gps/">car navigation systems</a></iframe>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="apellido">Apellido</label>
-                        <input class="form-control" id="apellido" type="text" placeholder="Apellido" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="emailAddress">Email</label>
-                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="phone">Teléfono</label>
-                        <input class="form-control" id="phone" type="text" placeholder="Apellido" />
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="consulta">Comentario</label>
-                        <textarea class="form-control" id="consulta" type="text"
-                            placeholder="Ingrese su comentario...."></textarea>
-                    </div>
-                    <div class="row">
-                        <button type="col-12 button" type="submit" value="Enviar"
-                            class="btn btn-lg btn-outline-dark mb-2">Enviar</button>
-                        <button type="col-12 button" type="reset" value="Resetear"
-                            class="btn btn-lg btn-outline-dark">Resetear</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-7 col-sm-12">
-                <div class="section__contenido--location">
-                    <iframe defer width="100%" height="auto" frameborder="0" scrolling="no" marginheight="0"
-                        marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=auto&amp;hl=en&amp;q=Sol,%20Madrid+(Madrid)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                            href="https://www.gps.ie/car-satnav-gps/">car navigation systems</a></iframe>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <footer class="footer">
+    <footer class="footer m-4">
         <p class="fs-9 text-center m-1">
             © 2021 Manuel Haro Fulgencio. All rights reserved.
         </p>

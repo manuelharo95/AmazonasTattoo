@@ -24,7 +24,6 @@ body {
   position: fixed;
   background: white;
   width: 100%;
-  padding:0.3rem;
 }
 
 .header__titulo {
@@ -90,6 +89,7 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
+  margin-top: 5rem;
 }
 
 .section__columns img {
@@ -119,10 +119,6 @@ body {
   margin-top: 1.2rem;
 }
 
-.section__contenido--padding {
-  padding: 5rem 2rem 0rem 2rem;
-}
-
 label {
   padding: 1rem;
   margin-top: 0.3rem;
@@ -147,6 +143,7 @@ textarea {
 .section__contenido--location {
   padding: 1rem;
   width: 100%;
+  margin-top: 3.5rem;
 }
 .section__video{
   width: 80%;
@@ -177,17 +174,12 @@ textarea {
     font-size: 2rem;
   }
 
-  .nav-item {
-    font-size: 2.3rem;
-  }
-
   /*-----------SECTION-----------*/
   .section__columns {
-    margin: 1rem;
+    margin: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: repeat(3, 0.5fr);
-    margin-top: 8rem;
   }
 
   .section__columns img {
@@ -198,12 +190,6 @@ textarea {
     transform: scale(1.1);
 }
 
-  .section__contenido--flex {
-    margin-top: 6rem;
-    font-size: 2.2rem;
-  }
-
-  
   label {
     padding: 2rem;
     font-size: 1.2rem;
@@ -226,7 +212,7 @@ textarea {
   }
 }
 /*-----ESCRITORIO------*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 
   /*-------HEADER-------*/
   body{
@@ -297,12 +283,11 @@ textarea {
     background-image: url("../images/home.jpg");
   }
   .section__columns {
-    margin: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
+    height: 95%;
     margin-top: 8rem;
-    height: 97%;
   }
   
   .section__contenido--flex {
@@ -315,36 +300,26 @@ textarea {
   }
   .section__texto {
     font-size: 1.2rem;
-    flex: 50%;
-    padding-top: 5rem;
+    flex: 71%;
   }
   .section__video{
-    flex: 50%;
-    padding-top: 5rem;
+    flex: 53%;
+    padding-top: 6rem;
   }
   .section__video iframe{
     width: 90%;
+    height: 30rem;
   } 
   .section__contenido--boton:hover {
     background-color: #e5e5e5;
   }
-  .section__contenido--padding {
-    padding-top: 6rem;
-  }
   .section__contenido--location{
     height: 100%;
-    margin-top: 1rem;
+    margin-top: 4.5rem;
   } 
 
   .section__contenido--location iframe{
     height: 80%;
-    margin:2rem;
   }
   
-  /*-----------FOOTER-----------*/
-  .footer p {
-    font-size: 1rem;
-    margin-left: 2rem;
-    text-align: left;
-  }
 }
