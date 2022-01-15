@@ -144,15 +144,9 @@ textarea {
   width: 10.5rem;
 }
 
-.section__contenido--boton {
-  padding: 1rem;
-  margin: 0.7rem;
-  background-color: white;
-}
-
 .section__contenido--location {
   padding: 1rem;
-  width: 90%;
+  width: 100%;
 }
 .section__video{
   width: 80%;
@@ -344,18 +338,15 @@ textarea {
   }
   .section__contenido--location{
     height: 90%;
-    margin: 4rem;
+    margin-top: 1rem;
   } 
 
   .section__contenido--location iframe{
     height: 80%;
     margin:2rem;
   }
-  .section__contenido--boton {
-    width: 35%;
-    margin-left: 2rem;
-  }
   
+
   /*-----------FOOTER-----------*/
   .footer p {
     font-size: 1rem;
