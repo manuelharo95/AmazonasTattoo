@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+3:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!--<link rel="stylesheet" href="./css-bt/bootstrap.min.css" />-->
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <title>Amazonas Tattoo</title>
-  </head>
 
-  <body>
-    <!--Header-->
-    <header class="header">
-      <div class="header__container">
-        <div class="header__menu" onclick="menu()"></div>
-        <h1 class="header__titulo">Amazonas Tattoo</h1>
-      </div>
-      <!--Nav-->
-      <nav class="header__navbar">
-        <div class="header__navbar--container">
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./pages/tatuajes.html">Tatuajes</a></li>
-            <li><a href="./pages/piercings.html">Piercings</a></li>
-            <li><a href="./pages/estudio.html">Estudio</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+3:wght@300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css-bt/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <title>Amazonas Tattoo</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="header">
+    <h1 class="header__titulo--desktop" href="#">Amazonas Tattoo</h1>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="header__titulo" href="#">Amazonas Tattoo</h1>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/tatuajes.html">Tatuajes</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/piercings.html">Piercings</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/estudio.html">Estudio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/contacto.html">Contacto</a>
+            </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <!--Seccion-->
-    <section class="section__contenido--principal"></section>
-    <!--Footer-->
-    <footer class="footer">
-      <p>© 2021 Manuel Haro Fulgencio. All rights reserved.</p>
-    </footer>
-  </body>
+      </div>
+    </nav>
+  </header>
+  <!--Seccion-->
+  <section class="section__contenido--principal"></section>
+  <!--Footer-->
+  <footer class="footer">
+    <p class="m-2 fs-9 text-center">© 2021 Manuel Haro Fulgencio. All rights reserved.</p>
+  </footer>
+</body>
 
-  <!--Script-->
-  <script src="js/menu.js"></script>
-  <!--<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script src="js/./bootstrap.min.js"></script>-->
+<!--Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="js/./bootstrap.min.js"></script>
+
 </html>

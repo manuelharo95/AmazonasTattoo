@@ -9,7 +9,7 @@ body {
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 5fr 0.2fr;
-  height: 97vh;
+  height: 100vh;
   grid-template-areas:
     "header"
     "content"
@@ -24,28 +24,7 @@ body {
   position: fixed;
   background: white;
   width: 100%;
-}
-
-.header__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch;
-}
-
-.header__menu {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-  background-image: url("../images/icono-hamburguesa.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  background-size: 4rem;
-  padding: 1rem;
-  margin: 1rem;
+  padding:0.3rem;
 }
 
 .header__titulo {
@@ -57,37 +36,53 @@ body {
   text-align: right;
 }
 
+.header__titulo--desktop{
+  display:none;
+}
+.header__titulo{
+  display:unset;
+}
+
 /*-----------NAVBAR-----------*/
 
 .header__navbar {
   width: 50%;
   height: 100%;
-  position: fixed;
   background-color: white;
   display: none;
   border: 2px solid black;
 }
 
-header nav ul li a {
+.bg-light {
+  background-color: white !important;
+}
+
+.nav-item {
+  display: block;
+  padding: 1.5rem;
+  border-bottom: 2px inset black;
+}
+.nav-item:first-child {
+  margin-top: 1rem;
+  border-top: 2px inset black;
+}
+
+.nav-item a {
   color: black;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
 }
 
-header nav ul li {
-  display: block;
-  padding: 1.5rem;
-  border-bottom: 2px inset black;
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,.55) !important;
 }
-
 /*-----------SECTION-----------*/
 
 .section__contenido--principal {
   grid-area: content;
   background-image: url("../images/home_mobile.jpg");
   background-color: white;
-  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -115,7 +110,7 @@ header nav ul li {
 }
 
 .section__texto {
-  padding: 2rem;
+  padding: 4rem 2rem 0rem 2rem;
   font-size: 0.95rem;
 }
 
@@ -125,7 +120,7 @@ header nav ul li {
 }
 
 .section__contenido--padding {
-  padding: 2rem;
+  padding: 5rem 2rem 0rem 2rem;
 }
 
 label {
@@ -161,30 +156,18 @@ textarea {
 }
 .section__video{
   width: 80%;
-  height: 20rem;
 }
 .section__video iframe{
   height:20rem;
+  padding: 1rem;
 } 
 
 /*-----------FOOTER-----------*/
 
 .footer {
   grid-area: footer;
-  background-color: white;
-  position: absolute;
-  top: 94%;
-  width: 100%;
-  position: fixed;
-  height: 100%;
 }
 
-.footer p {
-  font-weight: bold;
-  padding: 0.6rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
 
 /*---------TABLET-------------*/
 @media (min-width: 768px) {
@@ -200,7 +183,7 @@ textarea {
     font-size: 2rem;
   }
 
-  header nav ul li {
+  .nav-item {
     font-size: 2.3rem;
   }
 
@@ -251,7 +234,7 @@ textarea {
   /*-----------FOOTER-----------*/
   .footer p {
     font-size: 1.9rem;
-    padding: 1.2rem;
+    padding: 1rem;
   }
 }
 /*-----ESCRITORIO------*/
@@ -262,7 +245,6 @@ textarea {
     height: 99vh;
   }
 
-  
   .header {
     display: flex;
     flex-direction: row;
@@ -278,10 +260,14 @@ textarea {
   }
 
   .header__titulo {
-    text-align: left;
-    text-align: center;
-    font-size: 2rem;
+    display:none;
   }
+
+  .header__titulo--desktop{
+    display:unset;
+    padding: 1rem;
+  }
+
   .header__container{
     width: 50%;
   }
@@ -298,22 +284,25 @@ textarea {
     padding-right: 5rem;
   }
 
-  .header nav ul li {
+  .nav-item {
     display: inline-block;
     border: none;
   }
-  .header nav ul li a {
+  .nav-item a {
     display: inline-block;
     border: none;
     padding:0.4rem;
     font-size: 1.3rem;
+  }
+  .nav-item:first-child {
+    margin-top: 0rem;
+    border-top: none;
   }
 
   .header__navbar--container {
     display: block;
   }
   
-
   /*---------SECTION---------*/
 
   .section__contenido--principal {
@@ -331,7 +320,7 @@ textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     align-content: space-between;
   }
@@ -351,18 +340,16 @@ textarea {
     background-color: #e5e5e5;
   }
   .section__contenido--padding {
-    margin-top: 2rem;
-    width: 30%;
-    padding-right: 12rem;
+    padding-top: 6rem;
   }
   .section__contenido--location{
-    width: 30%;
     height: 90%;
-    margin-top: 6rem;
+    margin: 4rem;
   } 
 
   .section__contenido--location iframe{
     height: 80%;
+    margin:2rem;
   }
   .section__contenido--boton {
     width: 35%;
