@@ -1,0 +1,52 @@
+//---------Estudio---------//
+.section__contenido--flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: 2rem;
+  .section__texto {
+    padding: 4rem 2rem 0rem 2rem;
+    font-size: 0.95rem;
+  }
+  .section__video {
+    width: 80%;
+    iframe {
+      height: 20rem;
+      padding: 1rem;
+    }
+  }
+}
+
+/*---------Tablet-------------*/
+@media (min-width: 768px) {
+  .section__texto {
+    font-size: 1rem;
+  }
+}
+
+//---------Escritorio-------------*/
+@media screen and (min-width: 992px) {
+  .section__contenido--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-between;
+    .section__texto {
+      font-size: 1.2rem;
+      flex: 71%;
+    }
+    .section__video {
+      flex: 53%;
+      padding-top: 6rem;
+      iframe {
+        width: 90%;
+        height: 30rem;
+      }
+    }
+  }
+}
