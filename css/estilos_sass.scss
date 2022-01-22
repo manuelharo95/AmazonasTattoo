@@ -1,4 +1,7 @@
 //---------Estudio---------//
+$tablet: 768px;
+$desktop: 1024px;
+
 .section__contenido--flex {
   display: flex;
   flex-direction: column;
@@ -21,14 +24,14 @@
 }
 
 /*---------Tablet-------------*/
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .section__texto {
     font-size: 1rem;
   }
 }
 
 //---------Escritorio-------------*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $desktop) {
   .section__contenido--flex {
     display: flex;
     flex-direction: row;
