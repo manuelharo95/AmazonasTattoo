@@ -96,7 +96,8 @@ body {
 }
 
 .section__columns img {
-  width: 90%;
+  width: 100%;
+  height: auto;
   padding: 0.5rem;
   display: block;
   margin: 0 auto;
@@ -167,7 +168,6 @@ textarea {
   }
 
   .section__columns img {
-    height: 90%;
     transition: 0.75s all ease-in-out;
   }
   .section__columns img:hover {
