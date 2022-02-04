@@ -199,7 +199,7 @@ textarea {
   /*-------HEADER-------*/
 
   body {
-    height: 99vh;
+    height: 100vh;
   }
 
   .header {
@@ -270,8 +270,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
-    height: 95%;
-    margin-top: 8rem;
+    height: 98%;
   }
 
   .section__contenido--boton:hover {
@@ -279,8 +278,7 @@ textarea {
   }
 
   .section__contenido--location {
-    height: 100%;
-    margin-top: 4.5rem;
+    height: 90%;
   }
 
   .section__contenido--location iframe {
