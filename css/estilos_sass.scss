@@ -1,24 +1,57 @@
 //---------Estudio---------//
+
+/*Variables*/
 $tablet: 768px;
 $desktop: 1024px;
 
-.section__contenido--flex {
+/*----MAP-GET----*/
+$iframeMovil: (
+  altura: red,
+  rem: 1rem,
+);
+$iframeDesktop: (
+  ancho: 90%,
+  altura: 30rem,
+);
+
+/*----Mixin----*/
+@mixin contenido {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
-  align-content: flex-start;
+  align-content: flex-start; 
+}
+
+.section__contenido--flex {
+  @include contenido;
   margin-top: 2rem;
   .section__texto {
     padding: 4rem 2rem 0rem 2rem;
     font-size: 0.95rem;
+
+    /*-----EXTEND-----*/
+    &--primero {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+    &--segundo {
+      @extend .section__texto--primero;
+      font-weight: bold;
+    }
+    &--tercero {
+      @extend .section__texto--segundo;
+      font-family: "Roboto", sans-serif;
+      font-weight: lighter;
+    }
   }
+  /*----MAP-GET----*/
   .section__video {
     width: 80%;
     iframe {
-      height: 20rem;
-      padding: 1rem;
+      height: map-get($iframeMovil, altura);
+      padding: map-get($iframeMovil, rem);
     }
   }
 }
@@ -33,22 +66,21 @@ $desktop: 1024px;
 //---------Escritorio-------------*/
 @media screen and (min-width: $desktop) {
   .section__contenido--flex {
-    display: flex;
+    @include contenido;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: center;
     align-content: space-between;
     .section__texto {
       font-size: 1.2rem;
       flex: 71%;
     }
+    /*----MAP-GET----*/
     .section__video {
       flex: 53%;
       padding-top: 6rem;
       iframe {
-        width: 90%;
-        height: 30rem;
+        width: map-get($iframeDesktop, ancho);
+        height: map-get($iframeDesktop, altura);
       }
     }
   }
