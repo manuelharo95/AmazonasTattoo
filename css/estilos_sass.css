@@ -1,4 +1,4 @@
-/*Variables*/
+/*----Variables----*/
 /*----MAP-GET----*/
 /*----Mixin----*/
 .section__contenido--flex {
@@ -31,7 +31,6 @@
 
 .section__contenido--flex .section__texto--primero, .section__contenido--flex .section__texto--segundo, .section__contenido--flex .section__texto--tercero {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.95rem;
 }
 
 .section__contenido--flex .section__texto--segundo, .section__contenido--flex .section__texto--tercero {
@@ -59,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .section__contenido--flex {
     display: -webkit-box;
     display: -ms-flexbox;

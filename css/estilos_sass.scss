@@ -1,8 +1,8 @@
 //---------Estudio---------//
 
-/*Variables*/
+/*----Variables----*/
 $tablet: 768px;
-$desktop: 1024px;
+$desktop: 992px;
 
 /*----MAP-GET----*/
 $iframeMovil: (
@@ -30,11 +30,9 @@ $iframeDesktop: (
   .section__texto {
     padding: 4rem 2rem 0rem 2rem;
     font-size: 0.95rem;
-
     /*-----EXTEND-----*/
     &--primero {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.95rem;
     }
     &--segundo {
       @extend .section__texto--primero;
