@@ -77,7 +77,7 @@ body {
   background-size: cover;
 }
 
-.section__columns {
+.section__columns--tatuajes {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -88,6 +88,19 @@ body {
     padding: 0.5rem;
     display: block;
     margin: 0 auto;
+  }
+}
+.section__info {
+  &--artist {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  &--card {
+    border: none;
+    position: static !important;
+    & img {
+      border-radius: 8rem;
+    }
   }
 }
 
@@ -159,7 +172,7 @@ textarea {
 
   /*-----------SECTION-----------*/
 
-  .section__columns {
+  .section__columns--tatuajes {
     margin: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
@@ -168,9 +181,15 @@ textarea {
       height: 90%;
       width: map-get($sizes, ancho);
       transition: 0.75s all ease-in-out;
-      & hover {
+      &:hover {
         transform: scale(1.1);
       }
+    }
+  }
+  .section__info {
+    &--card {
+      width: 80%;
+      position: static !important;
     }
   }
   .section__contenido--texto {
@@ -256,7 +275,7 @@ textarea {
     background-image: url("../images/home.jpg");
   }
 
-  .section__columns {
+  .section__columns--tatuajes {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3, 2fr);
@@ -269,11 +288,13 @@ textarea {
     justify-content: flex-end;
     align-items: center;
     align-content: space-between; 
+    margin-top: 8rem;
     &--texto {
-      flex: 71%;
+      flex: 50%;
+      margin: 2rem;
     }
     &--video {
-      flex: 53%;
+      flex: 50%;
       padding-top: 6rem;
       iframe {
         width: map-get($iframeDesktop, ancho);
@@ -281,7 +302,11 @@ textarea {
       }
     }
   }
-
+  .section__info {
+    &--margin {
+      margin-left: 10rem;
+    }
+  }
   .section__contacto--location {
     height: 90%;
     iframe {

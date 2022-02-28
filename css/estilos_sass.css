@@ -82,7 +82,7 @@ body {
   background-size: cover;
 }
 
-.section__columns {
+.section__columns--tatuajes {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
@@ -92,12 +92,26 @@ body {
   margin-top: 5rem;
 }
 
-.section__columns img {
+.section__columns--tatuajes img {
   width: 95%;
   height: auto;
   padding: 0.5rem;
   display: block;
   margin: 0 auto;
+}
+
+.section__info--artist {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section__info--card {
+  border: none;
+  position: static !important;
+}
+
+.section__info--card img {
+  border-radius: 8rem;
 }
 
 .section__contenido {
@@ -130,7 +144,7 @@ body {
 }
 
 .section__contenido--video iframe {
-  height: red;
+  height: 100%;
   padding: remByDefault;
 }
 
@@ -178,7 +192,7 @@ textarea {
     font-size: 2rem;
   }
   /*-----------SECTION-----------*/
-  .section__columns {
+  .section__columns--tatuajes {
     margin: 4rem;
     display: -ms-grid;
     display: grid;
@@ -187,15 +201,19 @@ textarea {
     -ms-grid-rows: (0.5fr)[3];
         grid-template-rows: repeat(3, 0.5fr);
   }
-  .section__columns img {
+  .section__columns--tatuajes img {
     height: 90%;
     width: 100%;
     -webkit-transition: 0.75s all ease-in-out;
     transition: 0.75s all ease-in-out;
   }
-  .section__columns img hover {
+  .section__columns--tatuajes img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .section__info--card {
+    width: 80%;
+    position: static !important;
   }
   .section__contenido--texto {
     font-size: 1rem;
@@ -285,7 +303,7 @@ textarea {
   .section__contenido--principal {
     background-image: url("../images/home.jpg");
   }
-  .section__columns {
+  .section__columns--tatuajes {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (2fr)[3];
@@ -312,21 +330,26 @@ textarea {
             align-items: center;
     -ms-flex-line-pack: justify;
         align-content: space-between;
+    margin-top: 8rem;
   }
   .section__contenido--texto {
-    -webkit-box-flex: 71%;
-        -ms-flex: 71%;
-            flex: 71%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    margin: 2rem;
   }
   .section__contenido--video {
-    -webkit-box-flex: 53%;
-        -ms-flex: 53%;
-            flex: 53%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     padding-top: 6rem;
   }
   .section__contenido--video iframe {
     width: 90%;
     height: 30rem;
+  }
+  .section__info--margin {
+    margin-left: 10rem;
   }
   .section__contacto--location {
     height: 90%;
